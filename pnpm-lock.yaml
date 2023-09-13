@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@react-native-community/cli-platform-android':
+    specifier: ^11.3.8
+    version: 11.3.8
   '@react-navigation/native':
     specifier: 6.1.7
     version: 6.1.7(react-native@0.72.4)(react@18.2.0)
@@ -17,6 +20,9 @@ dependencies:
   react-native:
     specifier: 0.72.4
     version: 0.72.4(@babel/core@7.22.17)(@babel/preset-env@7.22.15)(react@18.2.0)
+  react-native-gradle-plugin:
+    specifier: ^0.71.19
+    version: 0.71.19
   react-native-safe-area-context:
     specifier: 4.7.2
     version: 4.7.2(react-native@0.72.4)(react@18.2.0)
@@ -1902,6 +1908,18 @@ packages:
       - encoding
     dev: false
 
+  /@react-native-community/cli-platform-android@11.3.8:
+    resolution: {integrity: sha512-hOLEPIKUE2i6/gdY4/UjCgv6i3MwU7uKml48TQYW9vv2ry95Wz7d/m6I4HDfDVfgo93rrBOd6wPbZIReaureNA==}
+    dependencies:
+      '@react-native-community/cli-tools': 11.3.8
+      chalk: 4.1.2
+      execa: 5.1.1
+      glob: 7.2.3
+      logkitty: 0.7.1
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@react-native-community/cli-platform-ios@11.3.6:
     resolution: {integrity: sha512-tZ9VbXWiRW+F+fbZzpLMZlj93g3Q96HpuMsS6DRhrTiG+vMQ3o6oPWSEEmMGOvJSYU7+y68Dc9ms2liC7VD6cw==}
     dependencies:
@@ -1958,6 +1976,22 @@ packages:
 
   /@react-native-community/cli-tools@11.3.6:
     resolution: {integrity: sha512-JpmUTcDwAGiTzLsfMlIAYpCMSJ9w2Qlf7PU7mZIRyEu61UzEawyw83DkqfbzDPBuRwRnaeN44JX2CP/yTO3ThQ==}
+    dependencies:
+      appdirsjs: 1.2.7
+      chalk: 4.1.2
+      find-up: 5.0.0
+      mime: 2.6.0
+      node-fetch: 2.7.0
+      open: 6.4.0
+      ora: 5.4.1
+      semver: 7.5.4
+      shell-quote: 1.8.1
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@react-native-community/cli-tools@11.3.8:
+    resolution: {integrity: sha512-O4bOnocCNcVfiAZ3r4jdRx088+jo8nz+47Z5MA06EValJVDAOZRblm3OFzI+oxKQiOA/QmR0+hFUtIIw2BxuYA==}
     dependencies:
       appdirsjs: 1.2.7
       chalk: 4.1.2
@@ -5936,6 +5970,10 @@ packages:
 
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+
+  /react-native-gradle-plugin@0.71.19:
+    resolution: {integrity: sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==}
+    dev: false
 
   /react-native-safe-area-context@4.7.2(react-native@0.72.4)(react@18.2.0):
     resolution: {integrity: sha512-5fy/hRNJ7bI/U2SliOeKf0D80J4lXPc1NsRiNS7Xaz8YTnqlzWib1ViItkwKPfufe54YKzVBMmM32RpdzvO2gg==}
